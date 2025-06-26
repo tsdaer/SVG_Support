@@ -8,11 +8,14 @@
 
 [How to use SVG Runtime](https://drive.google.com/file/d/1Pa4p8kAjKSwEVDJ2KkiorEjMDuzvutc4/view?usp=sharing)
 
-
+## Note
+1. If ShouldCleanUpOnLoadMap is checked, the system will release loaded assets when switching levels
+2. RenderMagnification means: if RenderSize is 60 and RenderMagnification is 3, then the actual texture size is 60*3=180
+3. Options with the Preview keyword will not affect anything running, they are only useful for previewing.
 
 ## Tutorial
-
-1. Create Primary Asset Types(Directory is your SVG asset Dir,Base Class must be ScalableVectorGraphicsWrapper):![image-20240326190937156](image/image-20240326190937156.png)
+### Base Class has been renamed to SvgWrapper！！！
+1. Create Primary Asset Types(Directory is your SVG asset Dir,Base Class must be SvgWrapper):![image-20240326190937156](image/image-20240326190937156.png)
 2. Register assets with the system using the RegisterSvgAssets function (Choose your asset type):![image-20240326191312862](image/image-20240326191312862.png)
 3. Directly drag the svg file into the directory just now![image-20240326191710812](image/image-20240326191710812.png)
 4. Double-click to enter the asset editor![image-20240326191813791](image/image-20240326191813791.png)

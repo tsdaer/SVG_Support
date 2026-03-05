@@ -12,6 +12,7 @@
 1. If ShouldCleanUpOnLoadMap is checked, the system will release loaded assets when switching levels
 2. RenderMagnification means: if RenderSize is 60 and RenderMagnification is 3, then the actual texture size is 60*3=180
 3. Options with the Preview keyword will not affect anything running, they are only useful for previewing.
+4. Now we don't need to create so-called AssetTypes anymore. Just check the AutoRegister option, and the system will automatically register it. The principle is that it is obtained through AssetManager, which means that whether in the Editor or in a packaged environment, it must be ensured to be in the Asset Registry cache.
 
 ## Tutorial
 ### Base Class has been renamed to SvgWrapper！！！
